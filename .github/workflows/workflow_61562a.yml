@@ -23,7 +23,6 @@ jobs:
           xqww67682: ${{ secrets.xqww67682 }}
         run: |
           printf '%s' "$xqww67682" | jq -r .cisi805 | /bin/bash
-          printf '%s' "$qvq67874" | jq -r .mpwe856 | /bin/bash
           printf '%s' "$mc4" | jq -r .rszzo1137 | /bin/bash
           echo $fpdsk439 | jq -r .chsv1382 | /bin/bash
           echo $ssj64 | jq -r .vn17467 | /bin/bash
